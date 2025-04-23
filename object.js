@@ -29,8 +29,8 @@ function User(name, age, introduce) {
   this.age = age;
   this.introduce = introduce;
 }
-const user = new User(“John Doe”, 34, function() {})
-const jane = new User(“Jane”, 32, function() {})
+const user = new User("John Doe", 34, function() {})
+const jane = new User("Jane", 32, function() {})
 
 const user = Object.create({})
 
@@ -45,3 +45,34 @@ const user = {
   age: 35,
   introduce: function() {}
 }
+
+class User {
+  constructor(name, age, introduce) {
+    this.name = name
+    this.age = age
+  }
+  
+  introduce() {}
+}
+const user = new User("John Doe", 34, function() {})
+
+const people = {}
+people.name = "John Doe"
+people["name"] = "John Doe"
+
+const people = {}
+people.introduce = function() {}
+
+const user = {
+  name: "John Doe",
+  age: 35,
+  introduce() {}
+}
+
+user.name
+user["name"]
+
+user.introduce()
+user["introduce"]()
+
+delete user.age // delete user["age"]
