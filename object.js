@@ -50,9 +50,8 @@ class User {
   constructor(name, age, introduce) {
     this.name = name
     this.age = age
+    this.introduce = introduce
   }
-  
-  introduce() {}
 }
 const user = new User("John Doe", 34, function() {})
 
