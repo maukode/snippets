@@ -1,22 +1,8 @@
-// This is demo snippets, running this will error becouse I redefined variable that use const
-
-const lemari = {
-  garpu: "garpu",
-  sendok: "sendok",
-  piring: "piring",
-  gelas: "gelas"
-}
-
-const complexLemari = {
-  garpu: "garpu",
-  sendok: "sendok",
-  piring: "piring",
-  gelas: {
-    kecil: "gelas kecil",
-    berkuping: "gelas berkuping",
-    plastik: "plastik",
-    goblet: "goblet"
-  }
+// This is demo snippets, running this will error because I redefined variable that use const
+const user = {
+  name: 'Demo User',
+  password: 'change-me-quickly',
+  email: 'demo.user@maukode.com'
 }
 
 const user = {}
